@@ -1,13 +1,6 @@
-import random
-import string
-from flask import Flask, render_template, redirect, url_for, request
+from website import create_app
 
-
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'radadadadaadadadaddad'
-
+app = create_app()
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-shortened_urls = {}
